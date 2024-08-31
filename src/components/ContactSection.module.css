@@ -1,0 +1,84 @@
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  display: block;
+  color: #ff9874;
+  font-weight: bold;
+  font-family: "Rubik", serif;
+  background-color: #fcddce;
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #ff9874;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-family: "Rubik", serif;
+  border: none;
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  margin: 20px;
+  background-color: #ff9874;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+  animation: wiggle 2s linear infinite;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  /* background-color: #ffd2c2; */
+  border-color: #ffd2c2;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: #7695ff;
+  font-family: "Rubik", serif;
+}
+textarea::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: #7695ff;
+  font-family: "Rubik", serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #ffd2c2 inset !important;
+  -webkit-text-fill-color: #ff9874 !important;
+}

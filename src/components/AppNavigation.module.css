@@ -1,0 +1,85 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #7695ff;
+  padding: 10px;
+  border-bottom: 1px solid #9dbdff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ul li {
+  margin: 0 10px;
+  padding: 100px;
+  padding-bottom: 0;
+  padding-top: 0; /* Adds padding inside the li elements */
+}
+
+li:hover {
+  opacity: 0.8;
+}
+
+.menuToggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffd7c4;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ul.open {
+    display: flex;
+    width: 100%;
+  }
+
+  .ul li {
+    margin: 10px 0;
+    padding-left: 160px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 5px; /* Further reduced padding */
+  }
+
+  .ul li {
+    padding-left: 0px; /* Further reduced padding for small screens */
+    font-size: 0.8em; /* Further reduced font size */
+    text-align: center;
+  }
+
+  .menuToggle {
+    font-size: 20px;
+    color: #ffd7c4;
+  }
+}

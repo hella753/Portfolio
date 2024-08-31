@@ -1,0 +1,86 @@
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  margin: 20px;
+  background-color: #ff9874;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+  animation: wiggle 2s linear infinite;
+}
+.button:hover {
+  border-color: #646cff;
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.h1 {
+  color: #ff9874;
+  text-align: center;
+}
+
+.h2 {
+  color: #ff9874;
+  text-align: center;
+}
+.p {
+  text-align: center;
+}
+
+.h3 {
+  text-align: center;
+}
+.span {
+  color: #ffd7c4;
+}
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .h1,
+  .h2,
+  .h3,
+  .p {
+    font-size: 0.9em;
+  }
+
+  .button {
+    padding: 0.4em 0.8em;
+    font-size: 0.8em;
+    margin: 8px;
+    color: #ffd7c4;
+  }
+  .p {
+    color: white;
+  }
+}

@@ -1,0 +1,76 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  gap: 20px; /* space between boxes */
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ff9874;
+}
+
+.box {
+  padding: 100px;
+  background-size: cover;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7695ff;
+}
+
+.box:nth-child(1) {
+  background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/weather-app.jpg");
+}
+.box:nth-child(2) {
+  background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/bbaccounting.jpg");
+}
+.box:nth-child(3) {
+  background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/legalrightsgeorgia.jpg");
+}
+.box:nth-child(4) {
+  background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/plantarium.jpg");
+}
+.box:nth-child(5) {
+  background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/bricks.jpg");
+}
+.box:nth-child(6) {
+  background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/paint.jpg");
+}
+.box:nth-child(7) {
+  background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/flashcards.jpg");
+}
+
+.box:hover {
+  background-image: none;
+  background-color: #9dbdff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .box {
+    padding: 50px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    padding: 30px; /* Further reduce padding for very small screens */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .container {
+    gap: 10px; /* Reduce gap between boxes */
+  }
+}

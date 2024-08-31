@@ -1,0 +1,34 @@
+.boxes {
+  background-color: #9dbdff;
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  font-weight: bolder;
+  font-size: large;
+  border: 2px solid #9dbdff;
+  margin: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ff9874;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
+
+.boxes:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  cursor: context-menu;
+}
+
+.h2 {
+  color: #ffd7c4;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically (optional) */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+  text-align: center;
+}
