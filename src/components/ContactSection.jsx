@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 function ContactSection() {
+  const SERVICEID = import.meta.env.VITE_SERVICEID;
+  const TEMPLATEID = import.meta.env.VITE_TEMPLATEID;
+  const EMAILKEY = import.meta.env.VITE_EMAILKEY;
+
   const [formData, setFormData] = useState({
     from_name: "",
     email: "",
@@ -23,21 +27,14 @@ function ContactSection() {
       subject: "",
       message: "",
     });
-    emailjs
-      .send(
-        "service_mip1rh5",
-        "template_8gpr6no",
-        formData,
-        "4NJJeybueKcAays_k"
-      )
-      .then(
-        (result) => {
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          alert("Error sending message, please try again.");
-        }
-      );
+    emailjs.send(SERVICEID, TEMPLATEID, formData, EMAILKEY).then(
+      (result) => {
+        alert("Message sent successfully!");
+      },
+      (error) => {
+        alert("Error sending message, please try again.");
+      }
+    );
   };
 
   return (
