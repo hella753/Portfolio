@@ -44,7 +44,7 @@ function ProjectsSection() {
         </a>
         <a
           className={styles.box}
-          href="https://hella753.github.io/legalrightsgeorgia-js/"
+          href="https://hella753.github.io/LegalRightsGeorgia-js/"
           target="blank"
         >
           <div
@@ -55,7 +55,7 @@ function ProjectsSection() {
         </a>
         <a
           className={styles.box}
-          href="https://hella753.github.io/plantarium-js/"
+          href="https://hella753.github.io/Plantarium-js/"
           target="blank"
         >
           <div
