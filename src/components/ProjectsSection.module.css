@@ -36,9 +36,6 @@
   background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/bricks.jpg");
 }
 .box:nth-child(6) {
-  background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/paint.jpg");
-}
-.box:nth-child(7) {
   background-image: url("C:/Users/Kristine/Desktop/portfolio/portfolio/src/images/flashcards.jpg");
 }
 

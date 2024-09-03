@@ -76,17 +76,6 @@ function ProjectsSection() {
           <div style={{ color: "white" }}>Bricks Game</div>
         </a>
         <a
-          href="https://github.com/hella753/paint"
-          className={styles.box}
-          target="blank"
-        >
-          <div
-            className={styles.image}
-            style={{ backgroundImage: `url(${paint})` }}
-          ></div>
-          <div style={{ color: "white" }}>Paint</div>
-        </a>
-        <a
           href="https://github.com/hella753/flashcards"
           className={styles.box}
           target="blank"
